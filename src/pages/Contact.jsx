@@ -15,9 +15,9 @@ const Contact = () => {
   
   const {alert, showAlert, hideAlert} = useAlert()
 
-  const handleChange = (e) => {
-    setForm({...form, [e.target.name]: e.target.value});
-  }
+  const handleChange = ({ target: { name, value } }) => {
+    setForm({ ...form, [name]: value });
+  };
   const handleSubmit = (e) => {
     e.preventDefault()
     setIsLoading(true)
@@ -36,7 +36,7 @@ const Contact = () => {
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
       setIsLoading(false)
-      showAlert({show: true, message: 'Message sent successfully!', type:'success'})
+      showAlert({show: true, text: 'Message sent successfully!', type:'success'})
       setTimeout(() => {
         hideAlert()
         setCurrentAnimation('idle')
@@ -46,7 +46,7 @@ const Contact = () => {
     }).catch((error) => {
       setIsLoading(false)
       setCurrentAnimation('idle')
-      showAlert({show: true, message: 'I did NOT recieve your message', type:'danger'})
+      showAlert({show: true, text: 'I did NOT recieve your message', type:'danger'})
       console.log(error)
     })
   }
@@ -55,7 +55,7 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle')
 
   return (
-    <section className='relateive flex lg:flex-row flex-col max-container'>
+    <section className='relateive flex lg:flex-row flex-col max-container h-[100vh]'>
       {alert.show && <Alert {...alert} />}
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
