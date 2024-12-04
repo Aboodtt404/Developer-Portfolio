@@ -15,7 +15,7 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          I'm a junior AI student at Misr International University in Egypt specializing in web development, game development, and AI
+        I'm a Senior AI student at Misr International University in Egypt, specializing in machine learning, deep learning, and their applications in web and game development.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ const About = () => {
         <h3 className='subhead-text'>Work Experiences</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-        As a junior AI student, my journey has predominantly involved freelancing, providing me with valuable opportunities to enhance my skills. I've also had the privilege of collaborating with talented individuals, collectively elevating our capabilities and creating meaningful contributions in the field.
+        As a Senior AI student, my journey has predominantly involved freelancing, providing me with valuable opportunities to enhance my skills. I've also had the privilege of collaborating with talented individuals, collectively elevating our capabilities and creating meaningful contributions in the field.
         <br /> Here's a rundown of what i've done throughout my journey:
         </p>
         </div>

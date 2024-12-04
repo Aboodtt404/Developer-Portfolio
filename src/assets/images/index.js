@@ -4,6 +4,9 @@ import mediplus from './mediplus.png'
 import quigacy from './quigacy.png'
 import sms from './sms.png'
 import logo from './logo.svg'
+import prime from './prime.jpg'
+import monopoly from './monopoly.png'
+import reestate from './reestate.jpg'
 
 export {
     hero,
@@ -11,5 +14,8 @@ export {
     mediplus,
     quigacy,
     sms,
-    logo
+    logo,
+    prime,
+    monopoly,
+    reestate
 }

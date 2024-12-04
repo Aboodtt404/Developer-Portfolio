@@ -27,6 +27,13 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import azure from './azure.svg'
+import aws from './aws.svg'
+import django from './django.svg'
+import electron from './electron.svg'
+import flutter from './flutter.svg'
+import gcloud from './gcloud.svg'
+import mysql from './mysql.svg'
 
 export {
     css,
@@ -57,5 +64,12 @@ export {
     unity,
     blender,
     ejs,
-    expressjs
+    expressjs,
+    aws,
+    azure,
+    django,
+    electron,
+    gcloud,
+    flutter,
+    mysql
 }
